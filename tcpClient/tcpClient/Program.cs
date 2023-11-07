@@ -9,22 +9,43 @@ public class Program
         string serverIP = "192.168.177.34";
         int serverPort = 1984;
 
-        TcpClient client = new TcpClient(serverIP, serverPort);
 
-        NetworkStream stream = client.GetStream();
+        while (true)
+        {
 
-        Console.Write("msg>");
-        string userName = Console.ReadLine();
+            TcpClient client = new TcpClient(serverIP, serverPort);
 
-        byte[] send = new byte[1024];
-        send = Encoding.Default.GetBytes(userName);
-        stream.Write(send, 0, send.Length);
+            NetworkStream stream = client.GetStream();
+            try
+            {
+                Console.Write("msg>");
+                string input = Console.ReadLine();
+                if(input == "exit")
+                {
+                    stream.Close();
+                    client.Close();
+                    break;
+                }
+                byte[] send = new byte[1024];
+                send = Encoding.Default.GetBytes(input);
+                stream.Write(send, 0, send.Length);
 
-        byte[] msg = new byte[1024];
-        stream.Read(msg, 0, msg.Length);
-        Console.WriteLine(Encoding.Default.GetString(msg));
+                byte[] msg = new byte[1024];
+                stream.Read(msg, 0, msg.Length);
+                Console.WriteLine(Encoding.Default.GetString(msg));
+            }
+            catch (Exception es)
+            {
+                Console.WriteLine("Error: " +  es.Message);
+            }
+            finally
+            {
+                stream.Close();
+                client.Close();
+            }
+        }
+        
 
-        stream.Close();
-        client.Close();
+
     }
 }
