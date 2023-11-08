@@ -26,7 +26,7 @@ namespace ServerTest
                 if (client.Connected)
                 {
                     string clientIP = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
-                    Console.WriteLine("Recived from: " + clientIP);
+                    Console.WriteLine("Recived Message From: " + clientIP);
                     Thread clientThread = new Thread(() => HandleClient(client));
                     clientThread.Start();
                 }
