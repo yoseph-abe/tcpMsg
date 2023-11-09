@@ -40,10 +40,6 @@ namespace ServerTest
             {
                 string receivedMessage = reader.ReadLine();
                 Console.WriteLine(receivedMessage);
-                if(clientIP == "192.168.177.34")
-                {
-                    sendTo("192.168.177.130", receivedMessage);
-                }
                 writer.WriteLine("Received: " + receivedMessage);
                 writer.Flush();
             }
@@ -58,15 +54,6 @@ namespace ServerTest
                 stream.Close();
                 client.Close();
             }
-        }
-        static void sendTo(string ipAddr, string message)
-        {
-            TcpClient client = new TcpClient(ipAddr, 1984);
-            NetworkStream stream = client.GetStream();
-            StreamReader reader = new StreamReader(stream);
-            StreamWriter writer = new StreamWriter(stream);
-            writer.WriteLine(message);
-            writer.Flush();
         }
     }
 }
