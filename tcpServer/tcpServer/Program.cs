@@ -31,18 +31,21 @@ namespace ServerTest
 
         static void HandleClient(TcpClient client)
         {
+            string clientIP = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
             NetworkStream stream = client.GetStream();
-            byte[] clientMsg = new byte[1024];
+            StreamReader reader = new StreamReader(stream);
+            StreamWriter writer = new StreamWriter(stream);
 
             try
             {
-                int bytesRead = stream.Read(clientMsg, 0, clientMsg.Length);
-                string receivedMessage = Encoding.Default.GetString(clientMsg, 0, bytesRead);
+                string receivedMessage = reader.ReadLine();
                 Console.WriteLine(receivedMessage);
-
-                // Echo the Message received
-                byte[] responseBytes = Encoding.UTF8.GetBytes("Received: " + receivedMessage);
-                stream.Write(responseBytes, 0, responseBytes.Length);
+                if(clientIP == "192.168.177.34")
+                {
+                    sendTo("192.168.177.130", receivedMessage);
+                }
+                writer.WriteLine("Received: " + receivedMessage);
+                writer.Flush();
             }
             catch (Exception ex)
             {
@@ -50,9 +53,20 @@ namespace ServerTest
             }
             finally
             {
+                reader.Close();
+                writer.Close();
                 stream.Close();
                 client.Close();
             }
+        }
+        static void sendTo(string ipAddr, string message)
+        {
+            TcpClient client = new TcpClient(ipAddr, 1984);
+            NetworkStream stream = client.GetStream();
+            StreamReader reader = new StreamReader(stream);
+            StreamWriter writer = new StreamWriter(stream);
+            writer.WriteLine(message);
+            writer.Flush();
         }
     }
 }

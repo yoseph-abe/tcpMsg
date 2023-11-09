@@ -16,6 +16,9 @@ public class Program
             TcpClient client = new TcpClient(serverIP, serverPort);
 
             NetworkStream stream = client.GetStream();
+            StreamReader reader = new StreamReader(stream);
+            StreamWriter writer = new StreamWriter(stream);
+
             try
             {
                 Console.Write("msg>");
@@ -24,17 +27,19 @@ public class Program
                 {
                     stream.Close();
                     client.Close();
+                    reader.Close();
+                    writer.Close();
                     Console.WriteLine("Connection Closed!");
                     break;
                 }
-                byte[] send = new byte[1024];
-                send = Encoding.Default.GetBytes(input);
-                stream.Write(send, 0, send.Length);
 
-                byte[] msg = new byte[1024];
-                int bytesRead = stream.Read(msg, 0, msg.Length);
-                stream.Read(msg, 0, bytesRead);
-                Console.WriteLine(Encoding.Default.GetString(msg));
+                //write message
+                writer.WriteLine(input);
+                writer.Flush();
+
+                //read server response
+                string serverResponse1 = reader.ReadLine();
+                Console.WriteLine(serverResponse1);
             }
             catch (Exception es)
             {
@@ -44,6 +49,8 @@ public class Program
             {
                 stream.Close();
                 client.Close();
+                reader.Close();
+                writer.Close();
             }
         }
     }
