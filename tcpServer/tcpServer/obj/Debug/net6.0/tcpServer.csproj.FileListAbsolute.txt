@@ -1,0 +1,14 @@
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\bin\Debug\net6.0\tcpServer.exe
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\bin\Debug\net6.0\tcpServer.deps.json
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\bin\Debug\net6.0\tcpServer.runtimeconfig.json
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\bin\Debug\net6.0\tcpServer.dll
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\bin\Debug\net6.0\tcpServer.pdb
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\obj\Debug\net6.0\tcpServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\obj\Debug\net6.0\tcpServer.AssemblyInfoInputs.cache
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\obj\Debug\net6.0\tcpServer.AssemblyInfo.cs
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\obj\Debug\net6.0\tcpServer.csproj.CoreCompileInputs.cache
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\obj\Debug\net6.0\tcpServer.dll
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\obj\Debug\net6.0\refint\tcpServer.dll
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\obj\Debug\net6.0\tcpServer.pdb
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\obj\Debug\net6.0\tcpServer.genruntimeconfig.cache
+C:\Users\Mitarbeiter\Desktop\git\tcpServer\tcpServer\obj\Debug\net6.0\ref\tcpServer.dll

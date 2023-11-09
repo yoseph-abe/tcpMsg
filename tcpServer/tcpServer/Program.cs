@@ -18,11 +18,6 @@ namespace ServerTest
                 TcpClient client = server.AcceptTcpClient();
                 NetworkStream stream = client.GetStream();
 
-                byte[] hello = new byte[1024];
-                hello = Encoding.Default.GetBytes("Server Recived!");
-
-                stream.Write(hello, 0, hello.Length);
-
                 if (client.Connected)
                 {
                     string clientIP = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
@@ -41,12 +36,13 @@ namespace ServerTest
 
             try
             {
-                
-                stream.Read(clientMsg, 0, clientMsg.Length);
-                Console.WriteLine(Encoding.Default.GetString(clientMsg));
-                stream.Flush();
-                //Array.Clear(clientMsg, 0, clientMsg.Length);
-                
+                int bytesRead = stream.Read(clientMsg, 0, clientMsg.Length);
+                string receivedMessage = Encoding.Default.GetString(clientMsg, 0, bytesRead);
+                Console.WriteLine(receivedMessage);
+
+                // Echo the Message received
+                byte[] responseBytes = Encoding.UTF8.GetBytes("Received: " + receivedMessage);
+                stream.Write(responseBytes, 0, responseBytes.Length);
             }
             catch (Exception ex)
             {
