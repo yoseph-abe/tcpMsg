@@ -24,6 +24,7 @@ public class Program
                 {
                     stream.Close();
                     client.Close();
+                    Console.WriteLine("Connection Closed!");
                     break;
                 }
                 byte[] send = new byte[1024];
@@ -31,7 +32,8 @@ public class Program
                 stream.Write(send, 0, send.Length);
 
                 byte[] msg = new byte[1024];
-                stream.Read(msg, 0, msg.Length);
+                int bytesRead = stream.Read(msg, 0, msg.Length);
+                stream.Read(msg, 0, bytesRead);
                 Console.WriteLine(Encoding.Default.GetString(msg));
             }
             catch (Exception es)
@@ -44,8 +46,5 @@ public class Program
                 client.Close();
             }
         }
-        
-
-
     }
 }
