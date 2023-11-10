@@ -12,3 +12,17 @@ C:\Users\Mitarbeiter\Desktop\git\tcpClient\tcpClient\obj\Debug\net6.0\refint\tcp
 C:\Users\Mitarbeiter\Desktop\git\tcpClient\tcpClient\obj\Debug\net6.0\tcpClient.pdb
 C:\Users\Mitarbeiter\Desktop\git\tcpClient\tcpClient\obj\Debug\net6.0\tcpClient.genruntimeconfig.cache
 C:\Users\Mitarbeiter\Desktop\git\tcpClient\tcpClient\obj\Debug\net6.0\ref\tcpClient.dll
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\bin\Debug\net6.0\tcpClient.exe
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\bin\Debug\net6.0\tcpClient.deps.json
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\bin\Debug\net6.0\tcpClient.runtimeconfig.json
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\bin\Debug\net6.0\tcpClient.dll
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\bin\Debug\net6.0\tcpClient.pdb
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\obj\Debug\net6.0\tcpClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\obj\Debug\net6.0\tcpClient.AssemblyInfoInputs.cache
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\obj\Debug\net6.0\tcpClient.AssemblyInfo.cs
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\obj\Debug\net6.0\tcpClient.csproj.CoreCompileInputs.cache
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\obj\Debug\net6.0\tcpClient.dll
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\obj\Debug\net6.0\refint\tcpClient.dll
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\obj\Debug\net6.0\tcpClient.pdb
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\obj\Debug\net6.0\tcpClient.genruntimeconfig.cache
+C:\Users\Mitarbeiter\Desktop\Backup\yosephDesktop10_11_23\git\tcpClient\tcpClient\obj\Debug\net6.0\ref\tcpClient.dll

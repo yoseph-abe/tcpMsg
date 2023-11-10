@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mitarbeiter\\Desktop\\git\\tcpClient\\tcpClient\\tcpClient.csproj": {}
+    "C:\\Users\\Mitarbeiter\\Desktop\\Backup\\yosephDesktop10_11_23\\git\\tcpClient\\tcpClient\\tcpClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mitarbeiter\\Desktop\\git\\tcpClient\\tcpClient\\tcpClient.csproj": {
+    "C:\\Users\\Mitarbeiter\\Desktop\\Backup\\yosephDesktop10_11_23\\git\\tcpClient\\tcpClient\\tcpClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mitarbeiter\\Desktop\\git\\tcpClient\\tcpClient\\tcpClient.csproj",
+        "projectUniqueName": "C:\\Users\\Mitarbeiter\\Desktop\\Backup\\yosephDesktop10_11_23\\git\\tcpClient\\tcpClient\\tcpClient.csproj",
         "projectName": "tcpClient",
-        "projectPath": "C:\\Users\\Mitarbeiter\\Desktop\\git\\tcpClient\\tcpClient\\tcpClient.csproj",
+        "projectPath": "C:\\Users\\Mitarbeiter\\Desktop\\Backup\\yosephDesktop10_11_23\\git\\tcpClient\\tcpClient\\tcpClient.csproj",
         "packagesPath": "C:\\Users\\Mitarbeiter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mitarbeiter\\Desktop\\git\\tcpClient\\tcpClient\\obj\\",
+        "outputPath": "C:\\Users\\Mitarbeiter\\Desktop\\Backup\\yosephDesktop10_11_23\\git\\tcpClient\\tcpClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
